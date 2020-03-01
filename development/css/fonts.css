@@ -1,0 +1,10 @@
+/*
+  Default font is Noto Sans.
+  Additional font for numbers is Muli.
+*/
+@import url('https://fonts.googleapis.com/css?family=Muli:900|Noto+Sans&display=swap&subset=cyrillic');
+
+:root {
+  --default-font: 'Noto Sans', sans-serif;
+  --optional-font: 'Muli', sans-serif;
+}

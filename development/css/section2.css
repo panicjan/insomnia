@@ -1,0 +1,223 @@
+.section-2 {
+  padding-top: 82px;
+  padding-bottom: 62px;
+}
+
+.section-2 .section-inner__text-wrapper {
+  width: 100%;
+  max-width: 449px;
+  margin-top: 26px;
+  grid-column: 1 / span 5;
+}
+
+.section-2 .lead-text__wrapper {
+  grid-column: 1 / span 4;
+}
+
+.section-2-reminder {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  border: 1px solid var(--theme-color);
+  border-radius: 8px;
+}
+
+.reminder-wrapper {
+  grid-column: auto / span 9;
+  display: flex;
+  flex-direction: row;
+}
+
+.reminder-icon {
+  width: 202px;
+  height: 180px;
+  margin-top: 28px;
+  margin-left: 60px;
+  grid-column: auto / span 3;
+  background: url('/assets/img/reminder-icon.svg') 0 100% no-repeat, url('/assets/img/reminder-blink-icon.svg') 89% 0% no-repeat;
+}
+
+.reminder-container__title {
+  margin-bottom: 4px;
+}
+
+.reminder-container p {
+  width: 100%;
+  max-width: 580px;
+  line-height: 119%;
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.reminder-container__decoration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reminder-container__decoration span {
+  width: 241px;
+  height: 25px;
+  background-image: url('/assets/img/reminder-decoration.svg');
+}
+
+.reminder-container__decoration span + span {
+  margin-top: 28px;
+}
+
+.reminder-list__wrapper {
+  margin-top: 115px;
+  padding-left: 55px;
+  grid-column: 1 / -1;
+}
+
+.reminder-list.reminder-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reminder-item {
+  width: 210px;
+  padding-left: 47px;
+  line-height: 143%;
+  font-size: 11px;
+  font-weight: 600;
+  background-image: url('/assets/img/reminder-list-icon.svg');
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+.reminder-item + .reminder-item {
+  margin-left: 28px;
+}
+
+.section-2-preference {
+  margin-top: 116px;
+}
+
+.preference-list {
+  grid-column: 6 / span 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.preference-item__title {
+  margin-bottom: 6px;
+  line-height: 220%;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--theme-color);
+}
+
+.preference-item + .preference-item {
+  margin-top: 36px;
+}
+
+/* Adaptive start */
+
+@media only screen and (max-width: 1024px) {
+  .section-2 .section-inner__text-wrapper {
+    max-width: 309px;
+  }
+
+  .reminder-icon {
+    margin-left: 20px;
+  }
+
+  .reminder-container p {
+    max-width: 100%;
+  }
+
+  .reminder-container__decoration {
+    display: none;
+  }
+
+  .reminder-list__wrapper {
+    padding-left: 20px;
+  }
+
+  .reminder-item {
+    min-width: 170px;
+  }
+
+  .reminder-item + .reminder-item {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-2-reminder {
+    padding: 56px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reminder-icon {
+    margin-left: 0;
+  }
+
+  .reminder-container__title {
+    text-align: center;
+  }
+
+  .reminder-container p {
+    text-align: center;
+  }
+
+  .reminder-list__wrapper {
+    width: 100%;
+    padding-left: 0;
+    align-self: flex-start;
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .section-2 {
+    padding-top: 91px;
+  }
+
+  .section-2 .section-inner__text-wrapper {
+    margin-top: 48px;
+  }
+
+  .section-2-reminder {
+    margin-top: 30px;
+  }
+
+  .reminder-icon {
+    width: 116px;
+    height: 86px;
+    padding-top: 56px;
+    background: url('/assets/img/reminder-icon.svg') 0 100% no-repeat;
+    background-size: contain;
+  }
+
+  .reminder-container__title {
+    margin-top: 24px;
+  }
+
+  .reminder-container p {
+    margin-top: 13px;
+    line-height: 133%;
+    font-size: 36px;
+  }
+
+  .reminder-list__wrapper {
+    margin-top: 56px;
+  }
+
+  .reminder-item {
+    min-width: 210px;
+  }
+
+  .section-2-preference {
+    margin-top: 42px;
+  }
+
+  .preference-list {
+    margin-top: 32px;
+  }
+}
+/* Adaptive end */

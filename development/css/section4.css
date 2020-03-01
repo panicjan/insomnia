@@ -1,0 +1,45 @@
+.section-4 {
+  padding-top: 125px;
+}
+
+.section-4 .section-inner__text-wrapper {
+  width: 100%;
+  margin-top: 17px;
+  grid-column: 1 / span 5;
+}
+
+.section-4 .section-inner {
+  grid-column: 4 / span 9;
+}
+
+.section-4 form {
+  width: 100%;
+  margin-top: 45px;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+
+.contacts {
+  margin-top: 93px;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts a {
+  cursor: pointer;
+  color: var(--theme-color);
+}
+
+.contacts a + a {
+  margin-top: 8px;
+}
+
+/* Adaptive start */
+@media only screen and (max-width: 768px) {
+  .section-4 {
+    padding-top: 62px;
+  }
+}
+/* Adaptive end */

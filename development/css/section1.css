@@ -1,0 +1,140 @@
+.section-1 {
+  padding-top: 82px;
+  padding-bottom: 84px;
+}
+
+.section-1 .section-inner--bordered::after {
+  width: calc(100% + 32px);
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  content: '';
+  background-color: var(--theme-color);
+}
+
+.section-1 .section-inner__text-wrapper {
+  width: 100%;
+  max-width: 449px;
+  margin-top: 23px;
+  grid-column: 1 / span 5;
+}
+
+.myth-list {
+  margin-top: 64px;
+}
+
+.myth-show {
+  display: none;
+}
+
+.myth-item {
+  padding-top: 60px;
+  position: relative;
+  grid-column: auto / span 3;
+  display: flex;
+  flex-direction: column;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.myth-item--1 {
+  background-image: url('/assets/img/myth-1-icon.svg');
+}
+
+.myth-item--2 {
+  background-image: url('/assets/img/myth-2-icon.svg');
+}
+
+.myth-item--3 {
+  background-image: url('/assets/img/myth-3-icon.svg');
+}
+
+.myth-item__title,
+.myth-item__subtitle {
+  line-height: 220%;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.myth-item__subtitle span {
+  width: 70px;
+  height: 10px;
+  margin: 0 1px;
+  display: inline-block;
+  border: 2px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.myth-item__content {
+  margin-top: 11px;
+}
+
+.myth-item__content p + p {
+  margin-top: 24px;
+}
+
+/* Adaptive start */
+@media only screen and (max-width: 680px) {
+  .section-1 {
+    padding-bottom: 91px;
+  }
+
+  .section-1 .section-inner__text-wrapper {
+    margin-top: 48px;
+  }
+
+  .section-1 .section-inner--bordered::after {
+    display: none;
+  }
+
+  .myth-show {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-image: url('/assets/img/myth-show-more.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .myth-item.active .myth-show {
+    background-image: url('/assets/img/myth-show-less.svg');
+  }
+
+  .myth-item {
+    padding: 88px 16px 20px;
+    border: 1px solid var(--theme-color);
+    border-radius: 8px;
+    background-position: 16px 26px;
+  }
+
+  .myth-item + .myth-item {
+    margin-top: 16px;
+  }
+
+  .myth-item__subtitle {
+    color: #fff;
+  }
+
+  .myth-item__subtitle span {
+    border-color: #fff;
+  }
+
+  .myth-item__content {
+    display: none;
+  }
+
+  .myth-item.active .myth-item__content {
+    display: block;
+  }
+}
+/* Adaptive end */

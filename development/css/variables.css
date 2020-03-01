@@ -1,0 +1,7 @@
+:root {
+  --body-background: #000;
+  --default-color: #fff;
+  --theme-color: #5364FF;
+  --accent-color: #FF3743;
+  --default-transition: all 0.2s linear;
+}

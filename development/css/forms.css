@@ -1,0 +1,44 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+form button[type="submit"] {
+  margin-top: 38px;
+}
+
+.button {
+  padding: 6px 24px;
+  cursor: pointer;
+  align-self: start;
+  border: 1px solid var(--theme-color);
+  background-color: transparent;
+  color: var(--theme-color);
+  transition: var(--default-transition);
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.input-text {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--theme-color);
+  background-color: transparent;
+  color: var(--default-color);
+}
+
+.input-text::placeholder {
+  color: var(--default-color);
+  transition: var(--default-transition);
+}
+
+.input-text:focus::placeholder {
+  color: transparent;
+}
+
+.input-text + .input-text {
+  margin-top: 26px;
+}
